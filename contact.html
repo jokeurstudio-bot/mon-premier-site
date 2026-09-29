@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Mon Site Vitrine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">MonSite</a>
+
+      <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" type="button">
+        ☰
+      </button>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav__link" href="index.html">Accueil</a>
+        <a class="nav__link" href="about.html">À propos</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="page-title">Contact</h1>
+
+    <div class="two-col">
+      <form class="form card" id="contactForm">
+        <label class="label">
+          Nom
+          <input name="name" required type="text" placeholder="Votre nom" />
+        </label>
+
+        <label class="label">
+          Email
+          <input name="email" required type="email" placeholder="vous@exemple.com" />
+        </label>
+
+        <label class="label">
+          Message
+          <textarea name="message" required rows="5" placeholder="Parlez-nous de votre projet..."></textarea>
+        </label>
+
+        <button class="btn btn--primary" type="submit">Envoyer</button>
+        <p class="form__note" id="formNote" aria-live="polite"></p>
+      </form>
+
+      <aside class="card">
+        <h3 class="card__title">Infos</h3>
+        <ul class="contact-list">
+          <li><strong>Email :</strong> contact@monsite.com</li>
+          <li><strong>Téléphone :</strong> +33 6 00 00 00 00</li>
+          <li><strong>Localisation :</strong> Ville, Pays</li>
+        </ul>
+        <p class="muted">
+          Astuce : si tu veux que le formulaire envoie vraiment, on peut l’intégrer
+          avec Formspree / Netlify Forms / Getform.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> MonSite. Tous droits réservés.</p>
+      <p class="muted">Fait pour GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
